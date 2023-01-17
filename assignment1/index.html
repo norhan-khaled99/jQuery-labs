@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="welcome">
+    </div>
+
+    <div></div>
+    <div></div>
+    
+    <div id="hidden">
+    55555555555555
+    </div>
+    <button id="btn1" >show</button>
+    <button id="btn2">hide</button>
+    <button id="btn3">toggle</button>
+    <button id="btn4">button 5 </button>
+    <script> 
+        $(document).ready(function(){ 
+           $("#welcome").html("Welcome norhan"); 
+        }); 
+        
+        $(document).ready(function()
+        {
+         $("div").css("background-color","yellow");
+        }
+        );
+        /*3*/
+        $(document).ready(function()
+        {
+          $("#btn1").click(function(){
+          $("#welcome").show();
+          });
+        });
+        
+        $(document).ready(function()
+        {
+          $("#btn2").click(function(){
+          $("#welcome").hide();
+          });
+        });
+        /*4*/
+        $(document).ready(function()
+        {
+          $("#btn3").click(function(){
+          $("#welcome").toggle();
+          });
+        });
+        
+        //5 
+       $("#hidden").css("display","none"); 
+       $("#btn4").click(function()
+       {
+        $("#hidden").css("display","block");
+       });
+       
+  
+    </script>
+</body>
+</html>
